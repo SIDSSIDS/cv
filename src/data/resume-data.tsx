@@ -6,235 +6,372 @@ import {
   NSNLogo,
   ParabolLogo,
 } from "@/images/logos";
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { GitHubIcon, TelegramIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+  name: "Aleksandr Kolychev",
+  initials: "AK",
+  location: "Tokyo, Japan",
+  locationLink: "https://www.google.com/maps/place/Tokyo",
   about:
-    "Detail-oriented Full Stack Engineer dedicated to building high-quality products.",
+    "Senior Java Developer",
   summary: (
     <>
-      Frontend-focused Full Stack Engineer specializing in high-performance
-      React applications, scalable Node.js services, and real-time collaboration
-      systems. Experienced in technical architecture design and remote team
-      leadership.
+      Qualified Java Software Engineer with 12+ years of experience in creating back-end solutions.
+      <ul className="list-inside list-disc" >
+        <li>
+          Created a cloud-based micro-service platform for ToTheMoonMobile telecommunication startup. Performed seamless user migration from the prototype system.
+        </li>
+        <li>
+          Built a new backend for a complex analytical system, which significantly reduced reports preparation time (involving TBs of data) from hours to almost real-time (&lt;30s).
+        </li>
+        <li>
+          As a freelance project, carried out the full development cycle of a full-stack solution for a hotel self-check-in kiosk, including a back-end server, external systems integration, and a web back-office for the hotel&apos;s staff.
+	</li>
+        <li>
+          Took a predominant part in the technical design and the implementation of core services for a distributed face/voice recognition platform.
+        </li>
+      </ul>  
     </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  avatarUrl: "avatar.jpg",
+  personalWebsiteUrl: "https://kolychev.dev",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "aleksandr@kolychev.dev",
+    tel: "+79522258307",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/SIDSSIDS",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/alexander-kolychev",
         icon: LinkedInIcon,
       },
       {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: XIcon,
+        name: "Telegram",
+        url: "https://t.me/aleksandr_kolychev",
+        icon: TelegramIcon,
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "St. Petersburg State Polytechnical University",
+      degree: "Master's Degree. Disciplines: IT, math, AI, quality management",
+      start: "2005",
+      end: "2011",
     },
   ],
   work: [
     {
-      company: "Film.io",
-      link: "https://film.io",
-      badges: ["Remote", "React", "Next.js", "TypeScript", "Node.js"],
-      title: "Software Architect",
-      logo: ConsultlyLogo,
-      start: "2024",
+      company: "PayPay Corp.",
+      link: "https://paypay.ne.jp",
+      type: "Hybrid",
+      location: "Tokyo",
+      badges: [
+	  "Java 8,21",
+	  "Kotlin",
+	  "AWS",
+	  "Kafka",
+	  "MySQL",
+	  "Redis",
+	  "Cassandra",
+	  "Maven",
+	  "Gradle",
+      ],
+      title: "Senior Java Developer",
+      start: "Jul 2023",
       end: null,
       description: (
         <>
-          Leading technical architecture of a blockchain-based film funding
-          platform.
+	  Top 1 mobile payment app in Japan with more than 60M users. The app is designed in the superapp manner and contains lots of miniapps covering wide range of user needs. I worked on building high performing and scalable platform for payment linked coupon promotion platform for the organized and un-organized merchants.<br />
+	  <b>Highlights</b>
           <ul className="list-inside list-disc">
             <li>
-              Architecting migration from CRA to Next.js for improved
-              performance, SEO, and DX
+              Maintained and developed high-loaded micro-services with 4K daily peak RPS and 1K MPS
             </li>
             <li>
-              Established release process enabling faster deployments and
-              reliable rollbacks
+              Implemented Clean Architecture approach that improved code readability, maintainability and testability. Also it reduced the number of bugs and decreased the feature delivery time.
             </li>
             <li>
-              Implementing system-wide monitoring and security improvements
+              Took major part in code + infrastructure migration project: seamless migration of outsourced micro-services to the company&apos;s infrastructure complying with internal code standards/libraries/dev and CI/CD flows. The migration also implied complete code refactoring with respect to the clean code architecture.
+            </li>
+            <li>
+              Improved team&apos;s knowledge by keeping knowledge-sharing sessions.
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Parabol",
-      link: "https://parabol.co",
+      company: "Vigo.one",
+      link: "https://vigo.one/",
+      type: "Remote",
+      location: "Cyprus",
       badges: [
-        "Remote",
-        "React",
-        "TypeScript",
-        "Node.js",
-        "GraphQL",
-        "Tailwind CSS",
+        "Java 11",
+	"Multi-threading",
+	"Hazelcast",
+        "Micronaut",
+        "Clickhouse",
+        "Kafka",
+	"Maven",
       ],
-      title: "Senior Full Stack Developer",
-      logo: ParabolLogo,
-      start: "2021",
-      end: "2024",
+      title: "Senior Java Developer",
+      start: "Nov 2021",
+      end: "Jun 2023",
       description: (
         <>
-          Senior developer and squad leader for an enterprise agile meeting
-          platform.
+	  The company collects information about network and session(game, video, VoIP) quality from mobile devices, aggregates it and provides analytical products for mobile operators to monitor their network state, searching places with bad coverage, planning network modernization and expansion.<br/>
+	  <b>Highlights</b>
           <ul className="list-inside list-disc">
             <li>
-              Built design system with Tailwind CSS, improving development speed
-              and time to market
+       		Designed and implemented a backend system for a new product, which unite the functionality of existing ones.
+	      <ul>
+		<li>
+		    - Proposed and proved the necessity to migrate the storage layer from Cassandra to Clickhouse to achieve the required performance and functionality. Developed a new data model
+		</li>
+		<li>
+		    - Designed and implemented a complex API which allows building custom analytical reports using complicated filtering, grouping, ordering
+		</li>
+	      </ul>
             </li>
             <li>
-              Implemented engineering practices: PR automation, code review
-              guidelines, and workflows
+	        Embed Micronaut as a DI framework (no DI framework had been used before), which made the system more testable and less coupled.
+            </li>
+          </ul>
+	  <b>Responsibilities</b>
+          <ul className="list-inside list-disc">
+            <li>
+	        Build a backend for a new product
             </li>
             <li>
-              Open source contributions to Relay DevTools and React i18n tooling
+		Conduct technical interviews for candidates
+            </li>
+            <li>
+		Code review
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote", "React", "TypeScript", "Node.js", "Android", "Kotlin"],
-      title: "Lead Android Developer → Full Stack Developer",
-      logo: ClevertechLogo,
-      start: "2015",
-      end: "2021",
+      company: "ToTheMoonMobile",
+      link: "https://tothemoonmobile.com",
+      type: "Remote",
+      location: "UK",
+      badges: [
+        "Java 11",
+        "AWS Lambda",
+        "AWS DynamoDB",
+	"AWS SNS",
+	"AWS SQS",
+	"AWS CloudFormation",
+	"AWS GatewayAPI",
+	"AWS StepFunctions",
+        "SpringBoot",
+        "Postgres",
+        "Docker",
+      ],
+      title: "Senior Java Developer",
+      start: "Jul 2020",
+      end: "Oct 2021",
       description: (
         <>
-          Successfully transitioned from mobile to full-stack development while
-          leading distributed teams.
+	  Virtual telecom operator in UK. <br/>
+	  <b>Highlights</b>
           <ul className="list-inside list-disc">
             <li>
-              Led frontend team at Evercast, building real-time platform
-              supporting 30+ users per room with HD streaming and collaboration
-              tools
+		Created cloud-based micro-service platform from scratch using AWS cloud with no experience in the latter.
             </li>
             <li>
-              Developed offline-first Android app for DKMS, improving donor
-              registration process
+		Seamlessly migrated existing users from the prototype solution to the platform
+            </li>
+          </ul>
+	  <b>Responsibilities</b>
+          <ul className="list-inside list-disc">
+            <li>
+	        Make almost all technical decisions concerning the cloud platform, including:
+		  <ul>
+		    <li>
+		    - architecture design
+		    </li>
+		    <li>
+		    - development, testing and deployment processes
+		    </li>
+		    <li>
+		    - set up logging and monitoring
+		    </li>
+		  </ul>
+            </li>
+	    <li>
+		Maintain production, stage and testing environments
+	    </li>
+	    <li>
+		Mentor other developers
+	    </li>
+	    <li>
+		Tier 2, 3 customer support
+	    </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      company: "SpeechPro",
+      link: "https://speechpro.com",
+      type: "Hybrid",
+      location: "Saint-Petersburg",
+      badges: [
+	  "Java 8",
+	  "RabbitMQ",
+	  "Postgres",
+	  "Oracle",
+	  "Redis",
+	  "Tomcat",
+	  "Docker"
+      ],
+      title: "Senior Java Developer",
+      start: "Apr 2016",
+      end: "Jul 2020",
+      description: (
+        <>
+	  Took a major part in creating a distributed voice\face recognition platform. The platform was a middle layer between business applications and different face\voice SDK, developed by R&D department.<br/>
+	  <b>Highlights</b>
+          <ul className="list-inside list-disc">
+            <li>
+		Creation of the most complicated platform services
+		  <ul>
+		    <li>
+		    - Configuration Service - a separate configuration server with a web interface, which controls the configuration of the whole platform and allows to monitor and configure services on-the-fly
+		    </li>
+		    <li>
+		    - Load Balancer - an internal service, which controls face/voice models cache distribution among processing engines and performs query routing. The service lets big identification queries (1 x 100M faces) complete with minimum overhead
+		    </li>
+		  </ul>
             </li>
             <li>
-              Led development teams across multiple successful client projects
+		Implementation of custom deployment tools for the team, which allowed developers to test their code on test environments much faster (deployment time decreased from an hour to a couple of minutes)
+            </li>
+          </ul>
+	  <b>Responsibilities</b>
+          <ul className="list-inside list-disc">
+            <li>
+		Technical design/review/implementation of new services and features
+            </li>
+            <li>
+		Integration with new SDK&apos;s and systems
+            </li>
+            <li>
+		Search and optimize system&apos;s bottle-necks
+            </li>
+            <li>
+		Advise DevOps team on automated build and deployment
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: ["On Site", "Android", "Java", "Kotlin"],
-      title: "Android Developer → Lead Android Developer",
-      logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
+      company: "Freelance project",
+      link: "",
+      type: "Remote",
+      location: "",
+      badges: ["Java 8", "Postgres", "SpringBoot", "Docker"],
+      title: "",
+      start: "Sep 2019",
+      end: "May 2020",
       description: (
         <>
-          First Android developer, grew and led a team of 15+ engineers while
-          establishing engineering culture.
+	  Created a full-stack solution for a hotel self-check-in kiosk. The system consisted of
           <ul className="list-inside list-disc">
             <li>
-              Developed apps for major Polish companies including LOT, Polskie
-              Radio, and Agora
+		back-end server, integrated with the kiosk and the hotel reservation system
             </li>
-            <li>Built and mentored high-performing mobile development team</li>
+            <li>
+		web back-office for the hotel&apos;s receptionists
+            </li>
           </ul>
+	  Carried out the full development cycle, from business requirements analysis until the system deployment.
         </>
       ),
     },
     {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: ["On Site", "C/C++", "LTE", "Agile"],
-      title: "C/C++ Developer",
-      logo: NSNLogo,
-      start: "2010",
-      end: "2012",
-      description:
-        "Developed software for LTE base stations at enterprise scale, gaining strong fundamentals in software architecture, testing practices, and cross-team collaboration.",
+      company: "LMA-ISIDA Group",
+      link: "",
+      type: "On-site",
+      location: "Saint-Petersburg",
+      badges: [],
+      title: "Lead Java Developer",
+      start: "Oct 2011",
+      end: "Mar 2016",
+      description: ""
     },
   ],
   skills: [
-    "React/Next.js/Remix",
-    "TypeScript",
-    "Tailwind CSS",
-    "Design Systems",
-    "WebRTC",
-    "WebSockets",
-    "Node.js",
-    "GraphQL",
-    "Relay",
+    "Java",
+    "Spring",
+    "Micronaut",
+    "SQL",
+    "PostgreSQL",
+    "MySQL",
+    "Clickhouse",
+    "Kafka",
+    "Redis",
+    "AWS",
+    "Linux",
+    "Docker",
+    "k8s",
+    "Maven/Gradle",
+    "Git",
+    "bash",
+    "Micro-services",
     "System Architecture",
-    "Remote Team Leadership",
   ],
   projects: [
     {
-      title: "Monito",
-      techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
+      title: "Cyberpunk neon theme",
+      techStack: ["IntelliJ IDEA plugin", "xml", "gradle"],
       description:
-        "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
-      logo: MonitoLogo,
+        "CyberPunk Neon theme plugin for JetBrains IntelliJ IDEA with 4.6 rating and >= 20k downloads",
       link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
+        label: "jetbrains-cyberpunk-neon-theme",
+        href: "https://plugins.jetbrains.com/plugin/21120-cyberpunk-neon-theme",
       },
     },
     {
-      title: "Consultly",
+      title: "AI Ext (active dev)",
       techStack: [
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-        "Tailwind CSS",
+        "Java",
+	"ChatGPT",
         "PostgreSQL",
-        "Redis",
+        "Twitch",
       ],
       description:
-        "Platform for online consultations with real-time video meetings and scheduling",
-      logo: ConsultlyLogo,
+        "AI-powered extentions for Twitch streams",
       link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
+        label: "ai-ext.com",
+        href: "https://ai-ext.com",
       },
     },
     {
-      title: "Minimalist CV",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
+      title: "App for IRL streaming",
+      techStack: [
+        "Java",
+	"Google TTS",
+	"ChatGPT",
+	"Android",
+        "PostgreSQL",
+        "Websocket",
+      ],
       description:
-        "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
-      logo: MonitoLogo,
+        "Android helper app for IRL streaming with build-in chat reader",
       link: {
-        label: "Minimalist CV",
-        href: "https://github.com/BartoszJarocki/cv",
+        label: "",
+        href: "",
       },
     },
   ],

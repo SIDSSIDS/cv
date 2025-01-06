@@ -88,7 +88,7 @@ interface WorkExperienceItemProps {
  * Handles responsive layout for badges (mobile/desktop)
  */
 function WorkExperienceItem({ work }: WorkExperienceItemProps) {
-  const { company, link, badges, title, start, end, description } = work;
+  const { company, link, type, location, badges, title, start, end, description } = work;
 
   return (
     <Card className="py-1 print:py-0">
@@ -96,10 +96,31 @@ function WorkExperienceItem({ work }: WorkExperienceItemProps) {
         <div className="flex items-center justify-between gap-x-2 text-base">
           <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none print:text-sm">
             <CompanyLink company={company} link={link} />
-            <BadgeList
-              className="hidden gap-x-1 sm:inline-flex"
-              badges={badges}
-            />
+            <ul
+              className="inline-flex list-none gap-x-1 p-0 gap-x-1 sm:inline-flex"
+              aria-label="Work type"
+            >
+            {type && (
+                <li>
+                  <Badge
+                    variant="secondary"
+                    className="align-middle text-xs print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
+                  >
+                    {type}
+                  </Badge>
+                </li>
+            )}
+            {location && (
+                <li>
+                  <Badge
+                    variant="secondary"
+                    className="align-middle text-xs print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
+                  >
+                    {location}
+                  </Badge>
+                </li>
+            )}
+            </ul>
           </h3>
           <WorkPeriod start={start} end={end} />
         </div>
@@ -115,7 +136,7 @@ function WorkExperienceItem({ work }: WorkExperienceItemProps) {
         </div>
         <div className="mt-2">
           <BadgeList
-            className="-mx-2 flex-wrap gap-1 sm:hidden"
+            className="-mx-2 flex-wrap gap-1"
             badges={badges}
           />
         </div>
