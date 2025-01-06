@@ -35,7 +35,7 @@ export const RESUME_DATA = {
     </>
   ),
   avatarUrl: "avatar.jpg",
-  personalWebsiteUrl: "https://kolychev.dev",
+  personalWebsiteUrl: "https://cv.kolychev.dev",
   contact: {
     email: "aleksandr@kolychev.dev",
     tel: "+79522258307",
