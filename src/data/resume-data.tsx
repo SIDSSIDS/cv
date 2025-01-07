@@ -34,7 +34,7 @@ export const RESUME_DATA = {
       </ul>  
     </>
   ),
-  avatarUrl: "avatar.jpg",
+  avatarUrl: "https://cv.kolychev.dev/avatar.jpg",
   personalWebsiteUrl: "https://cv.kolychev.dev",
   contact: {
     email: "aleksandr@kolychev.dev",
